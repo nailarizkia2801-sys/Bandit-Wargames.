@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petualangan Lengkap Bandit Wargame Level 0–20</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 20px; color: #2c3e50; background-color: #fefefe; }
+        h1, h2, h3 { color: #34495e; }
+        h1 { font-size: 2em; margin-bottom: 0.5em; }
+        h2 { font-size: 1.5em; margin-top: 1.2em; margin-bottom: 0.5em; }
+        h3 { font-size: 1.2em; margin-top: 1em; }
+        ul { margin-left: 20px; }
+        img { max-width: 100%; border-radius: 8px; margin: 10px 0; }
+        .tip { background-color: #eaf4ff; padding: 12px; border-left: 5px solid #3498db; margin: 15px 0; border-radius: 5px; }
+        .level { background-color: #fcf3e4; padding: 10px; border-left: 5px solid #f39c12; margin: 15px 0; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+<h1>Petualangan Lengkap Bandit Wargame Level 0–20</h1>
+
+<p>Siapkan dirimu untuk petualangan seru! Kamu akan menjadi hacker pemula yang menaklukkan <strong>Bandit Wargame</strong> dari level 0 hingga 20. Setiap level adalah misi baru yang mengasah logika, kreativitas, dan kemampuan command line Linux-mu.</p>
+
+<h2>📝 Catatan untuk Pemula</h2>
+<div class="tip">
+<ul>
+    <li><strong>Tenang!</strong> Bingung itu wajar. Fokus untuk belajar dari dasar.</li>
+    <li><strong>Gunakan manual:</strong> <code>man [COMMAND]</code> untuk mempelajari perintah Linux.</li>
+    <li><strong>Bantuan shell:</strong> <code>help [COMMAND]</code> untuk perintah bawaan shell.</li>
+    <li><strong>Google temanmu:</strong> Cari contoh dan referensi untuk memudahkan belajar.</li>
+    <li><strong>Coba & eksperimen:</strong> Kesalahan adalah cara terbaik untuk belajar.</li>
+    <li><strong>SSH & VM:</strong> Jika muncul “broken pipe”, tambahkan <code>IPQoS throughput</code> atau gunakan adaptor Bridged.</li>
+</ul>
+<p><strong>💡 Tip sukses:</strong> sabar, penasaran, dan mau belajar hal baru.</p>
+</div>
+
+<h2>🚀 Misi Level 0–20</h2>
+
+<!-- Level Loop -->
+<!-- Setiap level ada gambar placeholder, bisa diganti dengan screenshot nyata -->
+
+<div class="level">
+  <h3>Level 0 - 1</h3>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit0@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> bandit0</p>
+  </div>
+
+  <div class="image-container">
+    <img src="images/0-1.png.png" alt="Level 0">
+  </div>
+
+  <h4>Tujuan: Ambil password untuk level 1</h4>
+
+  <h3>Solution</h3>
+  <ul>
+    <li><code>ls -la</code> : berfungsi melihat daftar file yang ada</li>
+    <li><code>cat readme</code> : menampilkan isi file bernama readme ke layar</li>
+  </ul>
+  <div class="image-container">
+    <img src="images/0-2.png" alt="Level 0">
+  </div>
+
+  <p>Setelah menjalankan perintah di bagian solution, password level berikutnya akan tercetak di terminal. Salin string tersebut untuk login ke bandit1.</p>
+</div>
+
+<style>
+.level {
+  background: #1e1e2f; /* warna gelap lembut */
+  color: #f0f0f5; /* teks terang */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s;
+}
+.level:hover {
+  transform: scale(1.02);
+}
+
+.level h3 {
+  background: #6c5ce7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.level h4 {
+  margin: 10px 0 5px;
+  color: #a29bfe;
+}
+
+.level p {
+  margin: 5px 0 15px;
+}
+
+.level code {
+  background: #2d3436;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background: #2d2d44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.level ul {
+  list-style: inside square;
+  margin-left: 0;
+}
+</style>
+
+<div class="level">
+  <h3>Level 1 - 2</h3>
+  <h4>Server: bandit1.labs.overthewire.org port 2220</h4>
+
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit1@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If</p>
+  </div>
+  <h4>TPro-Tip: password untuk level ini adalah password yang telah didapat dilevel sebelumnya</h4>
+  <h3>Analysis</h3>
+  <ul>
+    <li>Karakter<code>-</code> : sering kali diinterprestasikan oleh linux sebagai awal dari sebuah opsi atau argumen perintah misal <code>-l</code>atau<code>-p</code>sehingga perintah <code>cat -</code>akan gagal atau macet</li>
+  </ul>
+
+  <h3>Solution</h3>
+  <ul>
+    <li>tentukan jalur (path) absolut atau relatif secara eksplisit agar sistem mengenali itu sebagai nama file</li>
+  </ul>
+  <div class="image-container">
+    <img src="images/0-3.png" alt="Level 0">
+  </div>
+
+  <p>Setelah menjalankan perintah di bagian solution, password level berikutnya akan tercetak di terminal. Salin string tersebut untuk login ke bandit2.</p>
+</div>
+
+<style>
+.level {
+  background: #1e1e2f; /* warna gelap lembut */
+  color: #f0f0f5; /* teks terang */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s;
+}
+.level:hover {
+  transform: scale(1.02);
+}
+
+.level h3 {
+  background: #6c5ce7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.level h4 {
+  margin: 10px 0 5px;
+  color: #a29bfe;
+}
+
+.level p {
+  margin: 5px 0 15px;
+}
+
+.level code {
+  background: #2d3436;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background: #2d2d44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.level ul {
+  list-style: inside square;
+  margin-left: 0;
+}
+</style>>
+
+<div class="level">
+  <h3>Level 2 - 3</h3>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit2@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> 263JGJPfgU6LtdEvgfWU1XP5yac29mFx</p>
+  </div>
+  <p>Level Goal: Kata sandi untuk level berikutnya tersimpan dalam sebuah file bernama<code>--spaces in this filename--</code>yang terletak di direktori home</p>
+  <div class="image-container">
+    <img src="images/0-4.png" alt="Level 0">
+  </div>
+<h3>Solution</h3>
+  <p>Gunakan tanda petik atau karakter escape(backslash) <code>/</code>sebelum setiap spasi :</p>
+  <h4><code>--spaces in this filename--</code></h4>
+  <ul>
+
+  <h4>Setelah menjalankan<code>--spaces in this filename--</code>password level berikutnya akan tercetak diterminal</h4>
+    <p><strong>Password:</strong> MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx</p>
+</div>
+
+<style>
+.level {
+  background: #1e1e2f; /* warna gelap lembut */
+  color: #f0f0f5; /* teks terang */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s;
+}
+.level:hover {
+  transform: scale(1.02);
+}
+
+.level h3 {
+  background: #6c5ce7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.level h4 {
+  margin: 10px 0 5px;
+  color: #a29bfe;
+}
+
+.level p {
+  margin: 5px 0 15px;
+}
+
+.level code {
+  background: #2d3436;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background: #2d2d44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.level ul {
+  list-style: inside square;
+  margin-left: 0;
+}
+</style>
+
+<div class="level">
+  <h3>Level 3 - 4</h3>
+  <h4>Server: bandit3.labs.overthewire.org port 2220</h4>
+
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit3@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx</strong> </p>
+  </div>
+  <h4>TPro-Tip: password untuk level ini adalah password yang telah didapat dilevel sebelumnya</h4>
+  <h3>Analysis</h3>
+  <ul>
+    <li>Di Linux,file yang diawali dengan tanda titik<code>.</code> : tidak akan muncul pada perintah<code>ls</code>biasa</li>
+  </ul>
+
+  <h3>SolutionData Retrieval</h3>
+   <li><kode>cd inhere</kode></li>
+    <li><kode>ls -la</kode></li>
+    <li><kode>cat ...Hiding-From-You</kode></li>
+    <p>Setelah menjalankan perintah <kode>cat ...Hiding-From-You</kode>assword level berikutnya akan tercetak di terminal. Salin string tersebut untuk login ke <kode>bandit4</kode></p>
+    <p><strong>Password:2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ</strong> </p>
+
+</div>
+
+<style>
+.level {
+  background: #1e1e2f; /* warna gelap lembut */
+  color: #f0f0f5; /* teks terang */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s;
+}
+.level:hover {
+  transform: scale(1.02);
+}
+
+.level h3 {
+  background: #6c5ce7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.level h4 {
+  margin: 10px 0 5px;
+  color: #a29bfe;
+}
+
+.level p {
+  margin: 5px 0 15px;
+}
+
+.level code {
+  background: #2d3436;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background: #2d2d44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.level ul {
+  list-style: inside square;
+  margin-left: 0;
+}
+</style>>
+
+<div class="level">
+  <h3>Level 4 - 5</h3>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit4@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> <code>2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ</code></p>
+  </div>
+  <h4>Pro-Tip: Password diatas adalah password yang didapat dari level sebelumnya.</h4>
+
+  <h3>Solution</h3>
+  <ul>
+    <li>Gunakan perintah<code>File</code> : untuk mengidentifikasi tipe konten dari setiap file dalam direktori :</li>
+    <li><code>cd inhere</code></li>
+     <li><code>file ./*</code></li>
+      <li><code>cat ./-file07</code></li>
+  </ul>
+  <p>Setelah menjalankan perintah di bagian solution, password level berikutnya akan tercetak di terminal pada <code>inhere/-file07</code>. Salin string tersebut untuk login ke bandit5.</p>
+
+  <li>Pro-Tip<code>file ./*</code>berfungsi menganalisis tipe semua file dalam folder</li>
+
+  <h3>Data Leak</h3>
+  <ul>
+    <li>Password : 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw</li>
+  </ul>
+</div>
+
+<style>
+.level {
+  background: #1e1e2f; /* warna gelap lembut */
+  color: #f0f0f5; /* teks terang */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s;
+}
+.level:hover {
+  transform: scale(1.02);
+}
+
+.level h3 {
+  background: #6c5ce7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.level h4 {
+  margin: 10px 0 5px;
+  color: #a29bfe;
+}
+
+.level p {
+  margin: 5px 0 15px;
+}
+
+.level code {
+  background: #2d3436;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background: #2d2d44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.level ul {
+  list-style: inside square;
+  margin-left: 0;
+}
+</style>
+
+</style>>
+
+<div class="level">
+  <h3>Level 5 - 6</h3>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit5@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> <code>4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw</code></p>
+  </div>
+  <h4>Pro-Tip: Password diatas adalah password yang didapat dari level sebelumnya.</h4>
+
+  <h3>Solution</h3>
+  <ul>
+    <li>Manfaatkan perintah<code>find</code> : dengan filter yang presisi</li>
+    <li><code>find . -type f -size 1033c ! -executable -ls</code></li>
+     <li><code>cat inhere/maybehere07/.file2</code></li>
+  </ul>
+  <p>Setelah menjalankan perintah di bagian solution, password level berikutnya akan tercetak di terminal .Salin string tersebut untuk login ke bandit6.</p>
+
+  <li>Pro-Tip<code>1033c</code>merujuk pada ukuran karakter (bytes),<code>!</code>berarti "bukan",dan<code>-ls</code>menampilkan infromasi dalam format yang lebih rinci</li>
+
+  <h3>Data Leak</h3>
+  <ul>
+    <li>Password : HWasnPhtq9AVKe0dmk45nxy20cvUa6EG</li>
+  </ul>
+</div>
+
+<style>
+.level {
+  background: #1e1e2f; /* warna gelap lembut */
+  color: #f0f0f5; /* teks terang */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s;
+}
+.level:hover {
+  transform: scale(1.02);
+}
+
+.level h3 {
+  background: #6c5ce7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.level h4 {
+  margin: 10px 0 5px;
+  color: #a29bfe;
+}
+
+.level p {
+  margin: 5px 0 15px;
+}
+
+.level code {
+  background: #2d3436;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background: #2d2d44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.level ul {
+  list-style: inside square;
+  margin-left: 0;
+}
+</style>
+
+</style>>
+
+<div class="level">
+  <h3>Level 6 - 7</h3>
+  <p>Level Goal: Kata sandi untuk level berikutnya tersimpan di <code>suatu tempat diserver</code>dan memiliki semua properti berikut: dimiliki oleh pengguna bandit7, dimiliki oleh grup bandit6, dan berukuran 33 byte
+</p>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit6@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> <code>HWasnPhtq9AVKe0dmk45nxy20cvUa6EG</code></p>
+  </div>
+  <h4>Pro-Tip: Password diatas adalah password yang didapat dari level sebelumnya.</h4>
+
+  <h3>Solution</h3>
+  <ul>
+    <li>Gunakan pencarian dari direktori root<code>/</code> : dan alihkan pesan error "Permission Denied" agar output tetap bersih:</li>
+    <li><code>find / -user bandit7 -group bandit6 -size 33c 2>/dev/null -ls</code></li>
+     <li><code>cat /var/lib/dpkg/info/bandit7.password</code></li>
+  </ul>
+  <p>Setelah menjalankan perintah di bagian solution, password level berikutnya akan tercetak di terminal .Salin string tersebut untuk login ke bandit7.</p>
+  
+  <h3>Data Leak</h3>
+  <ul>
+    <li>Password : morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj</li>
+  </ul>
+</div>
+
+<style>
+.level {
+  background: #1e1e2f; /* warna gelap lembut */
+  color: #f0f0f5; /* teks terang */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s;
+}
+.level:hover {
+  transform: scale(1.02);
+}
+
+.level h3 {
+  background: #6c5ce7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.level h4 {
+  margin: 10px 0 5px;
+  color: #a29bfe;
+}
+
+.level p {
+  margin: 5px 0 15px;
+}
+
+.level code {
+  background: #2d3436;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background: #2d2d44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.level ul {
+  list-style: inside square;
+  margin-left: 0;
+}
+</style>
+
+</style>>
+
+<div class="level">
+  <h3>Level 7 - 8</h3>
+  <p>Level Goal: Kata sandi untuk level berikutnya tersimpan di dalam file<code>data.txt</code>di sebelah kata <code>millionth</code>
+</p>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit7@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> <code>morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj</code></p>
+  </div>
+  <h4>Pro-Tip: Password diatas adalah password yang didapat dari level sebelumnya.</h4>
+
+  <h3>Solution</h3>
+  <ul>
+    <li>Gunakan perintah<code>grep</code>untuk menyaring baris tertentu:</li>
+    <li><code>grep "millionth" data.txt</code></li>
+  </ul>
+  <p>Setelah menjalankan perintah di bagian solution, password level berikutnya akan tercetak di terminal .Salin string tersebut untuk login ke bandit8.</p>
+  
+  <h3>Data Leak</h3>
+  <ul>
+    <li>millionth       dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc</li>
+  </ul>
+</div>
+
+<style>
+.level {
+  background: #1e1e2f; /* warna gelap lembut */
+  color: #f0f0f5; /* teks terang */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s;
+}
+.level:hover {
+  transform: scale(1.02);
+}
+
+.level h3 {
+  background: #6c5ce7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.level h4 {
+  margin: 10px 0 5px;
+  color: #a29bfe;
+}
+
+.level p {
+  margin: 5px 0 15px;
+}
+
+.level code {
+  background: #2d3436;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background: #2d2d44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.level ul {
+  list-style: inside square;
+  margin-left: 0;
+}
+</style>
+
+
+</style>>
+
+<div class="level">
+  <h3>Level 8-9</h3>
+  <p>Level Goal : Kata sandi untuk level berikutnya tersimpan di dalam file<code>data.txt</code>merupakan satu-satunya baris teks yang hanya muncul sekali.
+</p>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit8@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> <code>dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc</code></p>
+  </div>
+  <h4>Pro-Tip: Password diatas adalah password yang didapat dari level sebelumnya.</h4>
+
+  <h3>Solution</h3>
+  <ul>
+    <li>Gunakan kombinasi pipa (piping antara)<code>short</code>dan <code>uniq -u</code></li>
+  </ul>
+  <p>Setelah menjalankan perintah di bagian solution <code>sort data.txt | uniq -u</code>, password level berikutnya akan tercetak di terminal .Salin string tersebut untuk login ke bandit9.</p>
+  
+  <h3>Data Leak</h3>
+  <ul>
+    <li>password     4CKMh1JI91bUIZZPXDqGanal4xvAg0JM</li>
+  </ul>
+</div>
+
+<style>
+.level {
+  background: #1e1e2f; /* warna gelap lembut */
+  color: #f0f0f5; /* teks terang */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s;
+}
+.level:hover {
+  transform: scale(1.02);
+}
+
+.level h3 {
+  background: #6c5ce7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.level h4 {
+  margin: 10px 0 5px;
+  color: #a29bfe;
+}
+
+.level p {
+  margin: 5px 0 15px;
+}
+
+.level code {
+  background: #2d3436;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background: #2d2d44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.level ul {
+  list-style: inside square;
+  margin-left: 0;
+}
+</style>
+
+</style>>
+
+<div class="level">
+  <h3>Level 9-10</h3>
+  <p>Level Goal : Kata sandi untuk level berikutnya tersimpan di dalam file<code>data.txt</code>dalam salah satu dari sedikit string yang dapat dibaca manusia, diawali dengan beberapa karakter '='.
+</p>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit9@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> <code>4CKMh1JI91bUIZZPXDqGanal4xvAg0JM</code></p>
+  </div>
+  <h4>Pro-Tip: Password diatas adalah password yang didapat dari level sebelumnya.</h4>
+
+  <h3>Solution</h3>
+  <ul>
+    <li>Gunakan kombinasi pipa (piping antara)<code>short</code>dan <code>uniq -u</code></li>
+  </ul>
+  <p><code>strings data.txt | grep "=="</code>, Setelah menjalankan perintah di bagian solution.password level berikutnya akan tercetak di terminal .Salin string tersebut untuk login ke bandit10.</p>
+  <h4>Pro-Tip: <code>strings</code>memfilter file biner dan hanya menampilkan urutan karakter yang dapat dicetak (printable characters).</h4>
+  
+  <h3>Data Leak</h3>
+  <ul>
+    <li>password     FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey</li>
+  </ul>
+</div>
+
+<style>
+.level {
+  background: #1e1e2f; /* warna gelap lembut */
+  color: #f0f0f5; /* teks terang */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s;
+}
+.level:hover {
+  transform: scale(1.02);
+}
+
+.level h3 {
+  background: #6c5ce7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.level h4 {
+  margin: 10px 0 5px;
+  color: #a29bfe;
+}
+
+.level p {
+  margin: 5px 0 15px;
+}
+
+.level code {
+  background: #2d3436;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background: #2d2d44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.level ul {
+  list-style: inside square;
+  margin-left: 0;
+}
+</style>
+de>find</code> dan <code>sort</code>.</p>
+</div>
+
+</style>>
+
+<div class="level">
+  <h3>Level 10-11</h3>
+  <p>Level Goal : Kata sandi untuk level berikutnya tersimpan dalam file <code>data.txt</code>yang berisi data yang dikodekan base64.
+</p>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit10@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> <code>FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey</code></p>
+  </div>
+  <h4>Pro-Tip: Password diatas adalah password yang didapat dari level sebelumnya.</h4>
+
+  <h3>Solution</h3>
+  <ul>
+    <code>base64 -d data.txt</code>
+  </ul>
+  <p>Setelah menjalankan perintah <code>base64 -d data.txt</code> di bagian solution.password level berikutnya akan tercetak di terminal .Salin string tersebut untuk login ke bandit11.</p>
+  <h4>Pro-Tip:Parameter <code>-d</code>adalah singkatan dari dacode.</h4>
+  
+  <h3>Data Leak</h3>
+  <ul>
+    <li>password     dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr</li>
+  </ul>
+</div>
+
+<style>
+.level {
+  background: #1e1e2f; /* warna gelap lembut */
+  color: #f0f0f5; /* teks terang */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s;
+}
+.level:hover {
+  transform: scale(1.02);
+}
+
+.level h3 {
+  background: #6c5ce7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.level h4 {
+  margin: 10px 0 5px;
+  color: #a29bfe;
+}
+
+.level p {
+  margin: 5px 0 15px;
+}
+
+.level code {
+  background: #2d3436;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background: #2d2d44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.level ul {
+  list-style: inside square;
+  margin-left: 0;
+}
+</style>
+
+</style>>
+
+<div class="level">
+  <h3>Level 11-12</h3>
+  <p>Level Goal : Kata sandi untuk level berikutnya tersimpan dalam file <code>data.txt</code>dimana semua huruf kecil (a-z) dan huruf besar (A-Z) telah diputar sebanyak 13 posisi
+</p>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit11@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> <code>dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr</code></p>
+  </div>
+  <h4>Pro-Tip: Password diatas adalah password yang didapat dari level sebelumnya.</h4>
+
+  <h3>Solution</h3>
+  <ul>
+    <code>cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'</code>
+  </ul>
+  <p>Setelah menjalankan perintah <code>cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'</code> di bagian solution.password level berikutnya akan tercetak di terminal .Salin string tersebut untuk login ke bandit12.</p>
+  <h4>Pro-Tip:perintah <code>tr</code>(translate) memetakan set karakter pertama ke set karakter kedua secara berurutan.</h4>
+  
+  <h3>Data Leak</h3>
+  <ul>
+    <li>password     7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4</li>
+  </ul>
+</div>
+
+<style>
+.level {
+  background: #1e1e2f; /* warna gelap lembut */
+  color: #f0f0f5; /* teks terang */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s;
+}
+.level:hover {
+  transform: scale(1.02);
+}
+
+.level h3 {
+  background: #6c5ce7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.level h4 {
+  margin: 10px 0 5px;
+  color: #a29bfe;
+}
+
+.level p {
+  margin: 5px 0 15px;
+}
+
+.level code {
+  background: #2d3436;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background: #2d2d44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.level ul {
+  list-style: inside square;
+  margin-left: 0;
+}
+</style>
+
+</style>>
+
+<div class="level">
+  <h3>Level 12-13</h3>
+  <p>Level Goal : Kata sandi untuk level berikutnya tersimpan dalam file <code>data.txt</code> yang merupakan hexdump dari file yang telah dikompresi berulang kali. Untuk level ini, mungkin berguna untuk membuat direktori di bawah /tmp tempat Anda dapat bekerja. Gunakan mkdir dengan nama direktori yang sulit ditebak. Atau lebih baik, gunakan perintah “mktemp -d”. Kemudian salin file data menggunakan cp, dan ganti namanya menggunakan mv (baca halaman manualnya!).
+</p>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit12@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> <code>7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4</code></p>
+  </div>
+  <h4>Pro-Tip: Password diatas adalah password yang didapat dari level sebelumnya.</h4>
+
+  <h3>Strategy</h3>
+  <ul>
+  <p>Persiapan :Buat direktori sementara di <code>/tmp</code> menggunakan perintah <code>mktemp -d</code>salin file ke direktori tersebut dengan <code>cp ~/data.txt /tmp/nama_direktori_sementara</code></p>
+  <p>Reverse Hexdump: Masuk ke direktori sementara dengan <code>cd /tmp/nama_direktori_sementara</code> dan ubah kembali ke file biner dengan <code>xxd -r data.txt > data</code></p>
+  <p>identifikasi : Gunakan perintah <code>file data</code> untuk melihat sejenis kompresinya</p>
+  <p>Ekstraksi:
+   <p>Jika Gzip :<code>mv data data.gz && gunzip data.gz</code> </p>
+   <p>Jika Bzip2 :<code>mv data data.bz2 && bzip2 -d data.bz2</code> </p>
+   <p>Jika Tar:<code>mv data data.tar && tar -xf data.tar</code> </p>
+   <p>Ulangi langkah ini sampai mendapatkan file yang diidentifikasi sebagai ASCI Text.</p>
+   </p>
+
+  
+  <h3>Data Leak</h3>
+  <p>setelah menjalankan perintah <code>cat data</code>password level berikutnya akan tercetak di terminal. Salin string tersebut untuk login ke bandit13</p>
+  <ul>
+    <li>password     FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn</li>
+  </ul>
+</div>
+
+<style>
+.level {
+  background: #1e1e2f; /* warna gelap lembut */
+  color: #f0f0f5; /* teks terang */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s;
+}
+.level:hover {
+  transform: scale(1.02);
+}
+
+.level h3 {
+  background: #6c5ce7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.level h4 {
+  margin: 10px 0 5px;
+  color: #a29bfe;
+}
+
+.level p {
+  margin: 5px 0 15px;
+}
+
+.level code {
+  background: #2d3436;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background: #2d2d44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.level ul {
+  list-style: inside square;
+  margin-left: 0;
+}
+</style>
+<style>
+.level {
+  background: #1e1e2f; /* warna gelap lembut */
+  color: #f0f0f5; /* teks terang */
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: transform 0.3s;
+}
+.level:hover {
+  transform: scale(1.02);
+}
+
+.level h3 {
+  background: #6c5ce7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.level h4 {
+  margin: 10px 0 5px;
+  color: #a29bfe;
+}
+
+.level p {
+  margin: 5px 0 15px;
+}
+
+.level code {
+  background: #2d3436;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.login {
+  background: #2d2d44;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.level ul {
+  list-style: inside square;
+  margin-left: 0;
+}
+</style>
+
+<!-- Level 13 -->
+<div class="level">
+  <h3>Level 13</h3>
+  <p>Level Goal: Kata sandi untuk level berikutnya tersimpan dalam file <code>/etc/bandit_pass/bandit14</code>. Hanya dapat dibaca oleh pengguna bandit14. Untuk level ini, Anda akan menggunakan kunci SSH pribadi untuk masuk ke level berikutnya.</p>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit13@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> <code>FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn</code></p>
+  </div>
+  <h3>Solution</h3>
+  <code>cat /etc/bandit_pass/bandit14</code>
+  <h3>Data Leak</h3>
+  <ul>
+    <li>password: MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS</li>
+  </ul>
+</div>
+
+<!-- Level 14 -->
+<div class="level">
+  <h3>Level 14</h3>
+  <p>Level Goal: Kata sandi level berikutnya diperoleh dengan mengirimkan password level saat ini ke <code>port 30000 di localhost</code>.</p>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit14@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> <code>MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS</code></p>
+  </div>
+  <h3>Solution</h3>
+  <code>cat /etc/bandit_pass/bandit14 | nc localhost 30000</code>
+  <h3>Data Leak</h3>
+  <ul>
+    <li>password: 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo</li>
+  </ul>
+</div>
+
+<!-- Level 15 -->
+<div class="level">
+  <h3>Level 15</h3>
+  <p>Level Goal: Kirimkan password ke <code>port 30001</code> menggunakan enkripsi SSL/TLS.</p>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit15@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> <code>8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo</code></p>
+  </div>
+  <h3>Solution</h3>
+  <code>ncat --ssl localhost 30001</code>
+  <h3>Data Leak</h3>
+  <ul>
+    <li>password: kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx</li>
+  </ul>
+</div>
+
+<!-- Level 16 -->
+<div class="level">
+  <h3>Level 16</h3>
+  <p>Level Goal: Temukan port yang mendengarkan pada localhost antara 31000–32000 dan kirimkan password level saat ini. Hanya satu port memberikan kredensial berikutnya.</p>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit16@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> <code>kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx</code></p>
+  </div>
+  <h3>Strategy</h3>
+  <p>Gunakan <code>nmap -p 31000-32000 -sV localhost</code> untuk scanning port. Gunakan <code>ncat --ssl localhost PORT</code> untuk mengambil private key.</p>
+  <h3>Data Leak</h3>
+  <p>Private key SSH level berikutnya tercetak di terminal. Simpan sebagai <code>private.key</code> untuk login ke bandit17.</p>
+</div>
+
+<!-- Level 17 -->
+<div class="level">
+  <h3>Level 17</h3>
+  <p>Level Goal: Password level berikutnya ada di <code>passwords.new</code>, satu-satunya baris berbeda dari <code>passwords.old</code>.</p>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh -i private.key bandit17@bandit.labs.overthewire.org -p 2220</code></p>
+    <p>Gunakan file <code>private.key</code> yang diperoleh dari level sebelumnya. Atur permission: <code>chmod 600 private.key</code></p>
+  </div>
+  <h3>Solution</h3>
+  <code>diff passwords.old passwords.new</code>
+  <h3>Data Leak</h3>
+  <ul>
+    <li>password: x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO</li>
+  </ul>
+</div>
+
+<!-- Level 18 -->
+<div class="level">
+  <h3>Level 18</h3>
+  <p>Level Goal: Password tersimpan di file <code>readme</code> di direktori home. .bashrc memutus sesi jika login normal.</p>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"</code></p>
+    <p><strong>Password:</strong> <code>x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO</code></p>
+  </div>
+  <h3>Data Leak</h3>
+  <ul>
+    <li>password: cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8</li>
+  </ul>
+</div>
+
+<!-- Level 19 -->
+<div class="level">
+  <h3>Level 19</h3>
+  <p>Level Goal: Gunakan binary setuid di direktori home untuk menemukan password level berikutnya.</p>
+  <h4>Server: bandit.labs.overthewire.org port 2220</h4>
+  <div class="login">
+    <h4>Login</h4>
+    <p><code>ssh bandit19@bandit.labs.overthewire.org -p 2220</code></p>
+    <p><strong>Password:</strong> <code>cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8</code></p>
+  </div>
+</div>
+
+<div class="level">
+  <h3>Level 20-21</h3>
+  <p><strong>Level Goal:</strong> Terdapat sebuah program biner <em>setuid</em> di direktori home yang melakukan hal berikut: program ini membuat koneksi ke localhost pada port yang Anda tentukan sebagai argumen baris perintah. Kemudian, program membaca satu baris teks dari koneksi dan membandingkannya dengan kata sandi pada level sebelumnya (bandit20). Jika kata sandi benar, program akan mengirimkan kata sandi untuk level berikutnya (bandit21).</p>
+  <p><strong>CATATAN:</strong> Coba sambungkan ke daemon jaringan Anda sendiri untuk melihat apakah berfungsi seperti yang diharapkan.</p>
+
+  <h3>Analysis</h3>
+  <p>Program <code>suconnect</code> akan mencoba menghubungkan diri ke port yang Anda tentukan di localhost, membaca password dari sana, dan membandingkannya. Jika cocok, ia akan memberikan password level berikutnya.</p>
+
+  <h3>Solution</h3>
+  <p>Anda membutuhkan dua sesi terminal atau menjalankan proses di latar belakang (background):</p>
+  
+  <h4>1️⃣ Terminal 1 – SSH ke Server</h4>
+  <p>Lakukan koneksi remote menggunakan protokol SSH:</p>
+  <code>ssh bandit20@bandit.labs.overthewire.org -p 2220</code>
+
+  <h4>2️⃣ Jalankan Listener</h4>
+  <p>Di terminal yang sama atau berbeda:</p>
+  <code>echo -n "0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO" | nc -lvp 12345</code>
+
+  <h4>3️⃣ Terminal 2 – Jalankan Program Penghubung</h4>
+  <p>SSH ke server lagi:</p>
+  <code>ssh bandit20@bandit.labs.overthewire.org -p 2220</code>
+  <p>Jalankan program <code>suconnect</code>:</p>
+  <code>./suconnect 12345</code>
+
+  <p>Setelah terhubung, password level berikutnya akan tercetak di terminal. Salin string tersebut untuk login ke bandit21.</p>
+
+  <h3>Pro-Tip</h3>
+  <ul>
+    <li>Password level ini: <code>0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO</code></li>
+    <li><code>echo -n</code> digunakan untuk menghindari newline saat input.</li>
+    <li><code>nc -lvp</code> berarti: <strong>-l</strong> listen, <strong>-v</strong> verbose/debugging, <strong>-p</strong> port.</li>
+  </ul>
+
+  <h3>Data Leak</h3>
+  <p>Password level 21: <code>EeoULMCra2q0dSkYj561DX7s1CpBuOBt</code></p>
+</div>
+
+<h2>🎯 Kesimpulan</h2>
+<p>Bandit Wargame adalah petualangan seru untuk belajar Linux dan dasar keamanan siber. Dari level 0 hingga 20, setiap level membawa tantangan baru, membangun skill, logika, dan kreativitasmu. Bersiaplah, menaklukkan setiap level, dan rasakan sensasi menjadi hacker pemula yang handal!</p>
+
+</body>
+</html>
